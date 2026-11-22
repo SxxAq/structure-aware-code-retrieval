@@ -139,3 +139,4 @@ def test_four_configurations_e2e(encoder):
         # Config D should successfully find target at rank 1 with Recall@1 = 1.0 and MRR@10 = 1.0
         assert reports["Config D (Hybrid + AST)"].recall_at_1 == 1.0
         assert reports["Config D (Hybrid + AST)"].mrr_at_10 == 1.0
+

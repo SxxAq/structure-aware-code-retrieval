@@ -47,3 +47,4 @@ def test_query_categorization():
 
     cat2 = categorize_query("authenticate user session")
     assert cat2 == "conceptual"
+

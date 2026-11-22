@@ -26,3 +26,4 @@ def test_reciprocal_rank_fusion_math():
     # Check approximate score
     expected_doc_b_score = (1.0 / 61.0) + (1.0 / 62.0)
     assert pytest.approx(fused[0][1], abs=1e-5) == expected_doc_b_score
+

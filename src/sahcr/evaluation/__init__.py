@@ -31,3 +31,4 @@ __all__ = [
     "categorize_query",
     "BenchmarkRunner",
 ]
+

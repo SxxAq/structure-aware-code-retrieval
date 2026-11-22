@@ -137,3 +137,4 @@ class StructuralFeatureExtractor:
 
         matched = expected_nodes.intersection(unit_node_types)
         return min(1.0, len(matched) / len(expected_nodes))
+

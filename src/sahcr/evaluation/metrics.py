@@ -99,3 +99,4 @@ class BenchmarkEvaluator:
             latency_p90_ms=float(np.percentile(lat, 90)),
             latency_p99_ms=float(np.percentile(lat, 99)),
         )
+

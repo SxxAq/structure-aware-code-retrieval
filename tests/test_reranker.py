@@ -49,3 +49,4 @@ def test_structural_feature_extractor():
     # 4. Test AST node pattern match: query mentioning error handling (try_statement)
     feat4 = extractor.compute_features("catch and handle sign errors", unit)
     assert feat4["phi_ast_nodes"] > 0.0
+

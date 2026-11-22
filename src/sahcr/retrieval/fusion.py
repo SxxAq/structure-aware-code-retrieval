@@ -32,3 +32,4 @@ def reciprocal_rank_fusion(
     # Sort candidates by combined RRF score descending
     fused_candidates = sorted(rrf_scores.items(), key=lambda x: x[1], reverse=True)
     return fused_candidates[:top_k]
+

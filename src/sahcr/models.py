@@ -55,3 +55,11 @@ class ExtractedCodeUnit(BaseModel):
         # Source code
         return " ".join(tokens)
 
+    def get_dense_representation_text(self) -> str:
+        """Constructs representation for dense semantic encoding (CodeBERT)."""
+        parts = []
+        if self.docstring:
+            parts.append(self.docstring)
+        parts.append(self.source_code)
+        return "\n".join(parts)
+

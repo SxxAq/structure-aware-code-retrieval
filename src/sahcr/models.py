@@ -54,3 +54,4 @@ class ExtractedCodeUnit(BaseModel):
         tokens.extend([t.replace("_", " ") for t in self.ast_node_types])
         # Source code
         return " ".join(tokens)
+

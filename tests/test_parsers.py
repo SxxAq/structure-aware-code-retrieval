@@ -137,3 +137,4 @@ def test_parser_factory():
 
     with pytest.raises(ValueError):
         get_parser("ruby")
+

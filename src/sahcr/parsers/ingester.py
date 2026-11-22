@@ -69,3 +69,4 @@ class RepositoryIngester:
         except Exception as e:
             logger.warning(f"Failed to parse {file_path}: {e}")
             return []
+

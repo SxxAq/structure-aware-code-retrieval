@@ -165,3 +165,4 @@ class MetadataStore:
             is_method=bool(row["is_method"]),
             parent_class=row["parent_class"]
         )
+

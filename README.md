@@ -66,3 +66,4 @@ ingester = RepositoryIngester(metadata_store=store)
 units = ingester.ingest_path("/path/to/source/code")
 print(f"Extracted {len(units)} functions.")
 ```
+

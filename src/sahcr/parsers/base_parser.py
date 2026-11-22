@@ -43,3 +43,4 @@ class BaseParser(ABC):
     ) -> List[ExtractedCodeUnit]:
         """Extract functions, parameters, signatures, and AST node types from the parse tree."""
         pass
+

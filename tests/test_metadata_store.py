@@ -80,3 +80,4 @@ def test_metadata_store_roundtrip():
         # Test iteration
         all_units = list(store.iter_all_units())
         assert len(all_units) == 2
+

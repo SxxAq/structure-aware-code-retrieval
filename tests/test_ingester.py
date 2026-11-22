@@ -53,3 +53,4 @@ function fetchUser(userId) {
         assert store.count() == 3
         assert store.count("python") == 2
         assert store.count("javascript") == 1
+

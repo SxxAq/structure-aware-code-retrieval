@@ -217,3 +217,4 @@ class PythonParser(BaseParser):
         if body:
             _walk(body)
         return sorted(list(found_types))
+

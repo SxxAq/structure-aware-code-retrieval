@@ -21,3 +21,4 @@ def get_parser(language: str) -> BaseParser:
         return _PARSER_REGISTRY["javascript"]
     else:
         raise ValueError(f"Unsupported language: {language}. Supported: 'python', 'javascript'")
+

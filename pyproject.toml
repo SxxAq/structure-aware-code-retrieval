@@ -37,3 +37,4 @@ sahcr = "sahcr.interfaces.cli:app"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/sahcr"]
+

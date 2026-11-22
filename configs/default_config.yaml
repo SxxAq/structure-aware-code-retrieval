@@ -1,0 +1,41 @@
+# SAHCR System Configuration
+
+project:
+  name: "Structure-Aware Hybrid Code Retrieval"
+  version: "0.1.0"
+  supported_languages:
+    - "python"
+    - "javascript"
+
+storage:
+  data_dir: "data"
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  indices_dir: "data/indices"
+  metadata_db: "data/indices/metadata.sqlite"
+
+retrieval:
+  bm25:
+    k1: 1.5
+    b: 0.75
+    top_k: 50
+  dense:
+    model_name: "microsoft/codebert-base"
+    batch_size: 16
+    max_length: 256
+    pooling: "mean"  # "mean" or "cls"
+    top_k: 50
+    faiss_index_type: "flat"  # "flat" or "hnsw"
+  fusion:
+    method: "rrf"
+    rrf_k: 60
+    top_k: 100
+  reranker:
+    enabled: true
+    top_k: 10
+    alpha: 0.6  # weight for RRF score: score = alpha * RRF + (1 - alpha) * AST_score
+    feature_weights:
+      identifier_sim: 0.40
+      param_match: 0.30
+      return_match: 0.15
+      ast_node_match: 0.15
